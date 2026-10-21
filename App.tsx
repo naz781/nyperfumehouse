@@ -11,21 +11,21 @@ type Product = {
   imageSize?: "compact" | "balanced" | "generous" | "statement"
 }
 
-const images = {
-  valentino:
-    "https://images.unsplash.com/photo-1761329842950-f3551938e4da?auto=format&fit=crop&w=1200&q=88",
-  tomFord:
-    "https://images.unsplash.com/photo-1654617058572-f1f473581778?auto=format&fit=crop&w=1200&q=88",
-  blue: "https://images.unsplash.com/photo-1705936118918-870095881e61?auto=format&fit=crop&w=1200&q=88",
-  amber:
-    "https://images.unsplash.com/photo-1716857591457-7d7fa45199c6?auto=format&fit=crop&w=1200&q=88",
-  black:
-    "https://images.unsplash.com/photo-1604588638313-882e0e516cfb?auto=format&fit=crop&w=1200&q=88",
-  ck: "https://images.unsplash.com/photo-1607506740059-3772dc2a10b1?auto=format&fit=crop&w=1200&q=88",
-  noir: "https://images.unsplash.com/photo-1651056223915-b709056e0dc5?auto=format&fit=crop&w=1200&q=88",
-  water:
-    "https://images.unsplash.com/photo-1720662746262-377dfee50ad8?auto=format&fit=crop&w=1200&q=88",
-}
+// const images = {
+//   valentino:
+//     "https://images.unsplash.com/photo-1761329842950-f3551938e4da?auto=format&fit=crop&w=1200&q=88",
+//   tomFord:
+//     "https://images.unsplash.com/photo-1654617058572-f1f473581778?auto=format&fit=crop&w=1200&q=88",
+//   blue: "https://images.unsplash.com/photo-1705936118918-870095881e61?auto=format&fit=crop&w=1200&q=88",
+//   amber:
+//     "https://images.unsplash.com/photo-1716857591457-7d7fa45199c6?auto=format&fit=crop&w=1200&q=88",
+//   black:
+//     "https://images.unsplash.com/photo-1604588638313-882e0e516cfb?auto=format&fit=crop&w=1200&q=88",
+//   ck: "https://images.unsplash.com/photo-1607506740059-3772dc2a10b1?auto=format&fit=crop&w=1200&q=88",
+//   noir: "https://images.unsplash.com/photo-1651056223915-b709056e0dc5?auto=format&fit=crop&w=1200&q=88",
+//   water:
+//     "https://images.unsplash.com/photo-1720662746262-377dfee50ad8?auto=format&fit=crop&w=1200&q=88",
+// }
 
 // ───────── NEW: folder locations + helper ─────────
 const folders = {
