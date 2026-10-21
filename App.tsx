@@ -7,7 +7,7 @@ type Product = {
   note: string
   image: string
   badge?: string
-  studioImage?: boolean
+  studioImage?: boolean  
   imageSize?: "compact" | "balanced" | "generous" | "statement"
 }
 
@@ -371,40 +371,35 @@ const scentNotes = [
   {
     name: "Woods",
     description: "Cedar, sandalwood, vetiver",
-    image:
-      "https://images.unsplash.com/photo-1519606247872-0440aae9b827?auto=format&fit=crop&w=1200&q=90",
+    image: "/scent/woodscent.avif",
     alt: "Sculptural dark tree bark",
     artClass: "",
   },
   {
     name: "Florals",
     description: "Iris, jasmine, orange blossom",
-    image:
-      "https://images.unsplash.com/photo-1487528742387-d53d4f12488d?auto=format&fit=crop&w=1200&q=90",
+    image: "/scent/floralscent.avif",
     alt: "Soft flowers photographed in shadow",
     artClass: "",
   },
   {
     name: "Amber",
     description: "Vanilla, resins, warm spice",
-    image:
-      "https://images.unsplash.com/photo-1780432036901-a3a3e64c5a31?auto=format&fit=crop&w=1200&q=90",
+    image: "/scent/amberscent.avif",
     alt: "Golden amber and citrine stones",
     artClass: "",
   },
   {
     name: "Citrus",
     description: "Bergamot, lemon, mandarin",
-    image:
-      "https://images.unsplash.com/photo-1585345282543-ebc0d1cb3ee9?auto=format&fit=crop&w=1200&q=90",
+    image: "/scent/citricscent.avif",
     alt: "Citrus fruit covered in luminous droplets",
     artClass: "",
   },
   {
     name: "Gourmand",
     description: "Vanilla, caramel, tonka bean",
-    image:
-      "https://images.unsplash.com/photo-1682482198446-4cbf92f85a4b?auto=format&fit=crop&w=1200&q=90",
+    image: "/scent/gormand.avif",
     alt: "A bundle of natural vanilla pods",
     artClass: "",
   },
@@ -1133,7 +1128,7 @@ export default function App() {
         <div className="journal-grid">
           <article className="reveal">
             <img
-              src="https://images.unsplash.com/photo-1557170334-a9632e77c6e4?auto=format&fit=crop&w=1200&q=85"
+              src="/blogimage/miumiu.avif"
               alt="White iris flower in soft light"
               loading="lazy"
             />
@@ -1149,7 +1144,7 @@ export default function App() {
           </article>
           <article className="reveal">
             <img
-              src={images.amber}
+              src="/blogimage/amberblog.avif"
               alt="Amber fragrance bottle in evening light"
               loading="lazy"
             />
