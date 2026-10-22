@@ -6,26 +6,8 @@ type Product = {
   price: string
   note: string
   image: string
-  badge?: string
-  studioImage?: boolean  
   imageSize?: "compact" | "balanced" | "generous" | "statement"
 }
-
-// const images = {
-//   valentino:
-//     "https://images.unsplash.com/photo-1761329842950-f3551938e4da?auto=format&fit=crop&w=1200&q=88",
-//   tomFord:
-//     "https://images.unsplash.com/photo-1654617058572-f1f473581778?auto=format&fit=crop&w=1200&q=88",
-//   blue: "https://images.unsplash.com/photo-1705936118918-870095881e61?auto=format&fit=crop&w=1200&q=88",
-//   amber:
-//     "https://images.unsplash.com/photo-1716857591457-7d7fa45199c6?auto=format&fit=crop&w=1200&q=88",
-//   black:
-//     "https://images.unsplash.com/photo-1604588638313-882e0e516cfb?auto=format&fit=crop&w=1200&q=88",
-//   ck: "https://images.unsplash.com/photo-1607506740059-3772dc2a10b1?auto=format&fit=crop&w=1200&q=88",
-//   noir: "https://images.unsplash.com/photo-1651056223915-b709056e0dc5?auto=format&fit=crop&w=1200&q=88",
-//   water:
-//     "https://images.unsplash.com/photo-1720662746262-377dfee50ad8?auto=format&fit=crop&w=1200&q=88",
-// }
 
 // ───────── NEW: folder locations + helper ─────────
 const folders = {
@@ -44,8 +26,6 @@ const bestSellers: Product[] = [
     price: "$365",
     note: "Pineapple · Birch · Musk",
     image: img(folders.nature, "aventus.jpg"),
-    badge: "House favorite",
-    studioImage: true,
   },
   {
     name: "Baccarat Rouge 540",
@@ -53,7 +33,6 @@ const bestSellers: Product[] = [
     price: "$209.56",
     note: "1.2 oz EDP · Saffron · Amberwood",
     image: img(folders.nature, "baccarat-rouge-540.jpg"),
-    studioImage: true,
     imageSize: "statement",
   },
   {
@@ -62,7 +41,6 @@ const bestSellers: Product[] = [
     price: "$150",
     note: "Passion fruit · Vanilla · Musk",
     image: img(folders.nature, "power-of-you.jpg"),
-    studioImage: true,
   }, // CHECK NAME
   {
     name: "Jadore",
@@ -70,7 +48,6 @@ const bestSellers: Product[] = [
     price: "$160",
     note: "Ylang-ylang · Rose · Jasmine",
     image: img(folders.nature, "jadore.jpg"),
-    studioImage: true,
   }, // CHECK NAME
   {
     name: "Acqua di Giò",
@@ -78,7 +55,6 @@ const bestSellers: Product[] = [
     price: "$138",
     note: "Marine · Bergamot · Cedar",
     image: img(folders.nature, "acqua-di-gio.jpg"),
-    studioImage: true,
   }, // CHECK NAME
   {
     name: "The Most Wanted",
@@ -86,7 +62,6 @@ const bestSellers: Product[] = [
     price: "$125",
     note: "Toffee · Cardamom · Amber",
     image: img(folders.nature, "the-most-wanted.jpg"),
-    studioImage: true,
   }, // CHECK NAME
   {
     name: "Y",
@@ -94,7 +69,6 @@ const bestSellers: Product[] = [
     price: "$140",
     note: "Apple · Sage · Cedar",
     image: img(folders.nature, "ysl-y.jpg"),
-    studioImage: true,
   },
   {
     name: "The One",
@@ -102,7 +76,6 @@ const bestSellers: Product[] = [
     price: "$130",
     note: "Grapefruit · Tobacco · Amber",
     image: img(folders.nature, "the-one.jpg"),
-    studioImage: true,
   }, // CHECK NAME
   {
     name: "Paradoxe Intense",
@@ -110,7 +83,6 @@ const bestSellers: Product[] = [
     price: "$165",
     note: "Jasmine · Amber · Moss",
     image: img(folders.nature, "prada-paradoxe.jpg"),
-    studioImage: true,
   }, // CHECK NAME
   {
     name: "Born in Roma Donna",
@@ -118,7 +90,6 @@ const bestSellers: Product[] = [
     price: "$150",
     note: "Bourbon vanilla · Jasmine · Woods",
     image: img(folders.nature, "born-in-roma-donna.jpg"),
-    studioImage: true,
   }, // CHECK NAME
 ]
 
@@ -130,7 +101,6 @@ const designer: Product[] = [
     price: "$85",
     note: "Bergamot · Green tea · Musk",
     image: img(folders.canon, "ck-one.jpg"),
-    studioImage: true,
     imageSize: "balanced",
   },
   {
@@ -139,7 +109,6 @@ const designer: Product[] = [
     price: "$145",
     note: "Candied citrus · Orange blossom · Vanilla",
     image: img(folders.canon, "devotion.png"),
-    studioImage: true,
     imageSize: "compact",
   },
   {
@@ -148,7 +117,6 @@ const designer: Product[] = [
     price: "$165",
     note: "Soap · Coconut · White musk",
     image: img(folders.canon, "replica-bubble-bath.png"),
-    studioImage: true,
     imageSize: "compact",
   },
   {
@@ -157,7 +125,6 @@ const designer: Product[] = [
     price: "$132",
     note: "Grapefruit · Lavender · Cypress",
     image: img(folders.canon, "invictus.png"),
-    studioImage: true,
     imageSize: "balanced",
   },
   {
@@ -166,7 +133,6 @@ const designer: Product[] = [
     price: "$168",
     note: "Tuberose · Tonka · Cocoa",
     image: img(folders.canon, "good-girl.png"),
-    studioImage: true,
     imageSize: "compact",
   },
   {
@@ -175,7 +141,6 @@ const designer: Product[] = [
     price: "$150",
     note: "Iris · Praline · Vanilla",
     image: img(folders.canon, "la-vie-est-belle.png"),
-    studioImage: true,
     imageSize: "generous",
   },
   {
@@ -184,7 +149,6 @@ const designer: Product[] = [
     price: "$155",
     note: "Jasmine · Orchid · Patchouli",
     image: img(folders.canon, "flowerbomb.jpg"),
-    studioImage: true,
     imageSize: "balanced",
   }, // CHECK NAME
   {
@@ -193,7 +157,6 @@ const designer: Product[] = [
     price: "$135",
     note: "Mineral · Sage · Vetiver",
     image: img(folders.canon, "born-in-roma-uomo.jpg"),
-    studioImage: true,
     imageSize: "balanced",
   }, // CHECK NAME
   {
@@ -202,7 +165,6 @@ const designer: Product[] = [
     price: "$60",
     note: "Green leaf · Lotus · Musk",
     image: img(folders.canon, "nautica-voyage.jpg"),
-    studioImage: true,
     imageSize: "generous",
   }, // CHECK NAME
   {
@@ -211,7 +173,6 @@ const designer: Product[] = [
     price: "$155",
     note: "Bergamot · Amber · Woods",
     image: img(folders.canon, "i-will.png"),
-    studioImage: true,
     imageSize: "compact",
   },
 ]
@@ -224,8 +185,6 @@ const trending: Product[] = [
     price: "$75",
     note: "Orchid · Tropical fruit · Vanilla",
     image: img(folders.trending, "yara-elixir.jpg"),
-    badge: "Trending now",
-    studioImage: true,
   },
   {
     name: "Musamam",
@@ -233,7 +192,6 @@ const trending: Product[] = [
     price: "$70",
     note: "Saffron · Oud · Amber",
     image: img(folders.trending, "musamam.jpg"),
-    studioImage: true,
   },
   {
     name: "Asad",
@@ -241,7 +199,6 @@ const trending: Product[] = [
     price: "$75",
     note: "Pepper · Tobacco · Vanilla",
     image: img(folders.trending, "asad.jpg"),
-    studioImage: true,
   }, // CHECK NAME
   {
     name: "9 PM",
@@ -249,7 +206,6 @@ const trending: Product[] = [
     price: "$68",
     note: "Apple · Cinnamon · Vanilla",
     image: img(folders.trending, "9-pm.jpg"),
-    studioImage: true,
   },
   {
     name: "Nitro Red",
@@ -257,7 +213,6 @@ const trending: Product[] = [
     price: "$55",
     note: "Spice · Citrus · Woods",
     image: img(folders.trending, "nitro-red.jpg"),
-    studioImage: true,
   },
   {
     name: "Viva La Juicy",
@@ -265,7 +220,6 @@ const trending: Product[] = [
     price: "$112",
     note: "Pear · Honeysuckle · Caramel",
     image: img(folders.trending, "viva-la-juicy.jpg"),
-    studioImage: true,
   }, // CHECK NAME
   {
     name: "Vanilla Vibes",
@@ -273,7 +227,6 @@ const trending: Product[] = [
     price: "$135",
     note: "Vanilla · Musk · Sandalwood",
     image: img(folders.trending, "vanilla-vibes.jpg"),
-    studioImage: true,
   }, // CHECK NAME
   {
     name: "Not a Perfume",
@@ -281,7 +234,6 @@ const trending: Product[] = [
     price: "$135",
     note: "Ambroxan · Musk · Cedar",
     image: img(folders.trending, "not-a-perfume.jpg"),
-    studioImage: true,
   }, // CHECK NAME
   {
     name: "Cloud",
@@ -289,7 +241,6 @@ const trending: Product[] = [
     price: "$75",
     note: "Lavender · Coconut · Praline",
     image: img(folders.trending, "cloud.jpg"),
-    studioImage: true,
   }, // CHECK NAME
   {
     name: "Pink Sugar",
@@ -297,7 +248,6 @@ const trending: Product[] = [
     price: "$60",
     note: "Cotton candy · Caramel · Musk",
     image: img(folders.trending, "pink-sugar.jpg"),
-    studioImage: true,
   }, // CHECK NAME
 ]
 
@@ -367,41 +317,42 @@ const navigationHref = (item: string) =>
       ? "#beauty"
       : "#shop"
 
+const announcementMessages = [
+  "Complimentary samples with every fragrance order",
+  "30 days return policy · 100% authentic!",
+  "Up to 70% off department store prices!",
+]
+
 const scentNotes = [
   {
     name: "Woods",
     description: "Cedar, sandalwood, vetiver",
     image: "/scent/woodscent.avif",
     alt: "Sculptural dark tree bark",
-    artClass: "",
   },
   {
     name: "Florals",
     description: "Iris, jasmine, orange blossom",
     image: "/scent/floralscent.avif",
     alt: "Soft flowers photographed in shadow",
-    artClass: "",
   },
   {
     name: "Amber",
     description: "Vanilla, resins, warm spice",
     image: "/scent/amberscent.avif",
     alt: "Golden amber and citrine stones",
-    artClass: "",
   },
   {
     name: "Citrus",
     description: "Bergamot, lemon, mandarin",
     image: "/scent/citricscent.avif",
     alt: "Citrus fruit covered in luminous droplets",
-    artClass: "",
   },
   {
     name: "Gourmand",
     description: "Vanilla, caramel, tonka bean",
     image: "/scent/gormand.avif",
     alt: "A bundle of natural vanilla pods",
-    artClass: "",
   },
 ]
 
@@ -707,12 +658,11 @@ function ProductCard({
         </button>
         <div className="product-image-stage">
           <img
-            className={[
-              product.studioImage ? "studio-product-image" : "",
-              product.imageSize ? `product-image--${product.imageSize}` : "",
-            ]
-              .filter(Boolean)
-              .join(" ")}
+            className={
+              product.imageSize
+                ? `product-image--${product.imageSize}`
+                : undefined
+            }
             src={product.image}
             alt={`${product.house} ${product.name} fragrance`}
             loading="lazy"
@@ -793,6 +743,15 @@ export default function App() {
   const [selectedNote, setSelectedNote] = useState("Woods")
   const [noteStart, setNoteStart] = useState(0)
   const [activeManifesto, setActiveManifesto] = useState(0)
+  const [activeAnnouncement, setActiveAnnouncement] = useState(0)
+  const [previousManifestoImage, setPreviousManifestoImage] = useState(
+    manifestoSlides[0].image,
+  )
+
+  const changeManifesto = (index: number) => {
+    setPreviousManifestoImage(manifestoSlides[activeManifesto].image)
+    setActiveManifesto(index)
+  }
 
   useEffect(() => {
     document.title =
@@ -820,14 +779,22 @@ export default function App() {
   useEffect(() => {
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return
     const timer = window.setInterval(
-      () =>
-        setActiveManifesto(
-          (current) => (current + 1) % manifestoSlides.length,
-        ),
-      6000,
+      () => changeManifesto((activeManifesto + 1) % manifestoSlides.length),
+      8000,
     )
     return () => window.clearInterval(timer)
   }, [activeManifesto])
+
+  useEffect(() => {
+    const timer = window.setInterval(
+      () =>
+        setActiveAnnouncement(
+          (current) => (current + 1) % announcementMessages.length,
+        ),
+      3500,
+    )
+    return () => window.clearInterval(timer)
+  }, [])
 
   const addToCart = (product: Product) => {
     setCartCount((count) => count + 1)
@@ -844,8 +811,12 @@ export default function App() {
   return (
     <main id="top">
       <div className="announcement">
-        Complimentary samples with every fragrance order{" "}
-        <a href="#shop">Discover more</a>
+        <span
+          className="announcement-message"
+          key={activeAnnouncement}
+        >
+          {announcementMessages[activeAnnouncement]}
+        </span>
       </div>
       <header className="header">
         <button
@@ -938,7 +909,7 @@ export default function App() {
         </div>
         <div className="notes-grid shell reveal">
           {visibleNotes.map(
-            ({ name, description, image, alt, artClass }) => (
+            ({ name, description, image, alt }) => (
             <button
               type="button"
               key={name}
@@ -948,15 +919,7 @@ export default function App() {
               onClick={() => setSelectedNote(name)}
               aria-pressed={selectedNote === name}
             >
-              {artClass ? (
-                <span
-                  className={`note-art ${artClass}`}
-                  role="img"
-                  aria-label={alt}
-                />
-              ) : (
-                <img className="note-art" src={image} alt={alt} loading="lazy" />
-              )}
+              <img className="note-art" src={image} alt={alt} loading="lazy" />
               <span className="note-overlay">
                 <strong>{name}</strong>
                 <small>{description}</small>
@@ -1005,8 +968,7 @@ export default function App() {
         <div className="manifesto-image reveal">
           <img
             className="manifesto-image-backdrop"
-            key={manifesto.image}
-            src={manifesto.image}
+            src={previousManifestoImage}
             alt=""
             aria-hidden="true"
           />
@@ -1040,9 +1002,8 @@ export default function App() {
                 type="button"
                 className="previous"
                 onClick={() =>
-                  setActiveManifesto(
-                    (current) =>
-                      (current - 1 + manifestoSlides.length) %
+                  changeManifesto(
+                    (activeManifesto - 1 + manifestoSlides.length) %
                       manifestoSlides.length,
                   )
                 }
@@ -1053,9 +1014,7 @@ export default function App() {
               <button
                 type="button"
                 onClick={() =>
-                  setActiveManifesto(
-                    (current) => (current + 1) % manifestoSlides.length,
-                  )
+                  changeManifesto((activeManifesto + 1) % manifestoSlides.length)
                 }
                 aria-label="Next NY Standard story"
               >
